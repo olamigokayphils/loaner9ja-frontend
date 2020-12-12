@@ -1,17 +1,26 @@
+.no-deco,
+.no-deco:hover {
+  text-decoration: none;
+  color: initial;
+}
+
 .navbar {
   height: 80px;
   border: 0;
   padding: 0 40px;
   background-color: $primary-color-light2;
-  width: 100%;
+  // width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 0 8px 4px grey;
+  position: relative;
 
   .navlinks,
   .navauth {
     list-style: none;
-    font-size: $font-size-bg;
+    font-size: $font-size-md;
     display: flex;
     flex-direction: row;
     gap: 2em;
@@ -24,11 +33,24 @@
     cursor: pointer;
   }
   .navlinks--item:hover {
-    color: $secondary-color;
+    color: $secondary-color-light;
   }
 
   .navauth {
     padding-right: 80px;
+  }
+
+  .navauth--link {
+    border: 1px solid $secondary-color-light;
+    padding: 8px 15px;
+    border-radius: $border-radius-card;
+    cursor: pointer;
+  }
+
+  .navauth--link:hover {
+    background-color: $primary-color-light;
+    border: 1px solid $primary-color;
+    color: #f2f2f2;
   }
 
   .logo {
@@ -37,6 +59,48 @@
     color: $primary-color-light;
   }
   .logo9 {
-    color: $secondary-color;
+    color: $secondary-color-light;
+  }
+}
+
+.navbar-mobile {
+  display: none;
+  height: 80px;
+  border: 0;
+  padding: 0 40px;
+  background-color: $primary-color-light2;
+  // width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 0 8px 4px grey;
+  position: relative;
+
+  .navlinks {
+    list-style: none;
+    font-size: $font-size-md;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .logo {
+    font-size: $font-size-bg;
+    font-weight: bold;
+    color: $primary-color-light;
+  }
+  .logo9 {
+    color: $secondary-color-light;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    display: flex;
   }
 }

@@ -1,0 +1,114 @@
+/** Text Colors */
+.fa-color {
+  color: $primary-color;
+}
+.fa-color-light {
+  color: $primary-color-light;
+}
+
+.fa-color-light2 {
+  color: $primary-color-light2;
+}
+
+.fa-color-sec {
+  color: $secondary-color;
+}
+
+.fa-color-sec-light {
+  color: $secondary-color-light;
+}
+
+/** Measurement */
+.w-100 {
+  width: 100%;
+}
+
+.image-bg-section {
+  background-image: url("https://images.pexels.com/photos/944762/pexels-photo-944762.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.call-to-action {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  .intro {
+    margin: 200px auto;
+    font-size: $font-size-tl;
+    font-weight: 600;
+    color: #f2f2f2;
+  }
+
+  p {
+    margin: 0;
+    line-height: 0.8;
+    text-align: center;
+  }
+
+  .intro-btn-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 0.3em;
+  }
+}
+
+.app-container {
+  max-width: 90%;
+  width: 1600px;
+  margin: auto;
+}
+
+.user-intro-details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.loan-history-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.loan-item {
+  padding: 20px;
+  max-width: 90%;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 4px gray;
+}
+
+.loan-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-item-details span + span {
+  margin-top: 10px;
+}
+
+.loan-status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.loan-running {
+  background-color: burlywood;
+}
+
+.loan-settled {
+  background-color: seagreen;
+}

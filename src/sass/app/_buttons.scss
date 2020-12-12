@@ -1,0 +1,42 @@
+.btn {
+  padding: 15px 20px;
+  border-radius: $border-radius-card;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: $secondary-color;
+  color: aliceblue;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.btn-block {
+  padding: 15px 20px;
+  border-radius: $border-radius-card;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: $secondary-color;
+  color: aliceblue;
+  transition: all 0.4s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-slim {
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: $primary-color-light;
+  color: #f2f2f2;
+}
+
+.btn-flex-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
